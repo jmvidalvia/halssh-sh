@@ -1,0 +1,19 @@
+Spider mode enabled. Check if remote file exists.
+--2011-04-01 21:45:01--  http://dl.dropbox.com/u/3018975/vtas_grupo.pdf
+Resolving dl.dropbox.com... 184.72.245.175
+Connecting to dl.dropbox.com|184.72.245.175|:80... connected.
+HTTP request sent, awaiting response... 
+  HTTP/1.1 200 OK
+  Server: dbws
+  Date: Fri, 01 Apr 2011 19:45:03 GMT
+  Content-Type: application/pdf
+  Connection: keep-alive
+  content-length: 366942
+  x-robots-tag: noindex,nofollow
+  accept-ranges: bytes
+  etag: 548n
+  pragma: public
+  cache-control: max-age=0
+Length: 366942 (358K) [application/pdf]
+Remote file exists.
+

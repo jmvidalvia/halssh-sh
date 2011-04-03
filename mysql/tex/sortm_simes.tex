@@ -1,0 +1,44 @@
+%        File: pp.tex
+%     Created: lun sep 27 08:00  2010 Hdvr
+% Last Change: lun sep 27 08:00  2010 Hdvr
+%
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{watermark}
+\usepackage[spanish]{babel}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\setlength{\footskip}{1.3cm}
+\addtolength{\textheight}{4.5cm}
+\addtolength{\textwidth}{6.5cm}
+\addtolength{\hoffset}{-3.3cm}
+\addtolength{\voffset}{-1.2cm}
+\addtolength{\topmargin}{-1.0cm}
+\definecolor{gris}{gray}{0.7}
+\arrayrulecolor{gris}
+
+\watermark{
+\put(-85,-775){\includegraphics{simes.pdf}
+}}
+
+\begin{document}
+\begin{center}
+\textbf{Listado ABC de margen agente XXXX a {\today}}
+\small
+\begin{longtable}{llrrr}
+\toprule
+\textbf{Nº cli} & \textbf{Cliente}&\textbf{Vtas\_act}&\textbf{Mgen\_act}&\textbf{Mgen\_ant}\\
+\toprule
+\endhead
+\multicolumn{5}{c}{Sigue $\ldots$}\\
+\endfoot
+\endlastfoot
+\input{/home/jm/mysql/xcli/sortm_simes/XXXX}
+\bottomrule
+\end{longtable}
+\end{center}
+\end{document}
